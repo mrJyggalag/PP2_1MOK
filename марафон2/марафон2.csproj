@@ -76,6 +76,18 @@
     <Compile Include="contacts.Designer.cs">
       <DependentUpon>contacts.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrM.Designer.cs">
+      <DependentUpon>RegistrM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regrun.Designer.cs">
+      <DependentUpon>regrun.cs</DependentUpon>
+    </Compile>
     <Compile Include="info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +145,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="contacts.resx">
       <DependentUpon>contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrM.resx">
+      <DependentUpon>RegistrM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regrun.resx">
+      <DependentUpon>regrun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="info.resx">
       <DependentUpon>info.cs</DependentUpon>
