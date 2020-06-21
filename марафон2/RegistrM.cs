@@ -189,14 +189,51 @@ namespace марафон2
             f.ShowDialog();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            string charity = "";
+            string rid = "";
+            string email = File.ReadAllText("Resources/run.txt");
+            using (SqlConnection con =  new SqlConnection (марафон2.Properties.Settings.Default.MaraphonConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "SELECT RunnerID FROM Runner where Email= '" + email + "'";
+                SqlDataReader r = cmd.ExecuteReader();
+                while (r.Read())
+                {
+                    rid = r[0].ToString();
+                }
+                con.Close();
+                con.Open();
+                SqlCommand cm = con.CreateCommand();
+                cm.CommandText = "SELECT CharityId FROM Charity where CharityName = '" + comboBox1.Text + "'";
+                SqlDataReader r1 = cm.ExecuteReader();
+                while(r1.Read())
+                {
+                    charity = r1[0].ToString();
+                }
+                con.Close();
+            }   
+            if (checkBox1.Checked == true || checkBox2.Checked == true || checkBox3.Checked == true)
+            {
+                using (SqlConnection con = new SqlConnection(марафон2.Properties.Settings.Default.MaraphonConnectionString))
+                {
+                    con.Open();
+                    SqlCommand cmd = con.CreateCommand();
+                    cmd.CommandText = "Insert into Registration Values ('" + rid + "','" +
+                        DateTime.Today + "','" + kit + "','4','" + cost + "','" + charity + "','" + textBox1.Text + "')";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
+                completerunner cpltr = new completerunner();
+                cpltr.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Вы не выбрали марафон.");
+            }
         }
     }
 }

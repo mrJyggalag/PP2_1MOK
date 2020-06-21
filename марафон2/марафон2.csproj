@@ -76,6 +76,12 @@
     <Compile Include="contacts.Designer.cs">
       <DependentUpon>contacts.cs</DependentUpon>
     </Compile>
+    <Compile Include="completerunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="completerunner.Designer.cs">
+      <DependentUpon>completerunner.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="completerunner.resx">
+      <DependentUpon>completerunner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="coordinators.resx">
       <DependentUpon>coordinators.cs</DependentUpon>
     </EmbeddedResource>
