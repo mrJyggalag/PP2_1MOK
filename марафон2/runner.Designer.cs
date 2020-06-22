@@ -126,7 +126,7 @@
             // 
             this.button5.Location = new System.Drawing.Point(16, 224);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 52);
+            this.button5.Size = new System.Drawing.Size(120, 52);
             this.button5.TabIndex = 23;
             this.button5.Text = "Контакты";
             this.button5.UseVisualStyleBackColor = true;
@@ -136,16 +136,17 @@
             // 
             this.button4.Location = new System.Drawing.Point(15, 154);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 52);
+            this.button4.Size = new System.Drawing.Size(121, 52);
             this.button4.TabIndex = 22;
             this.button4.Text = "Редактирование профиля";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(15, 79);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 52);
+            this.button3.Size = new System.Drawing.Size(121, 52);
             this.button3.TabIndex = 21;
             this.button3.Text = "Регистрация на марафоне";
             this.button3.UseVisualStyleBackColor = true;

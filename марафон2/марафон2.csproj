@@ -82,6 +82,13 @@
     <Compile Include="completerunner.Designer.cs">
       <DependentUpon>completerunner.cs</DependentUpon>
     </Compile>
+    <Compile Include="red.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>red.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RegistrM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="checkrunner.resx">
       <DependentUpon>checkrunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="red.resx">
+      <DependentUpon>red.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fond.resx">
       <DependentUpon>fond.cs</DependentUpon>
