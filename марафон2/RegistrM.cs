@@ -156,12 +156,14 @@ namespace марафон2
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {if (textBox1.TextLength == 0)
+        {
+            if (textBox1.TextLength == 0)
             {
                 textBox1.Text = "0";
                 label8.Text = (Convert.ToInt32(label8) - b).ToString();
             }
-            label8.Text = (b + Convert.ToInt32(label8)).ToString();
+  
+            label8.Text = (b+ Convert.ToInt32(textBox1.Text) ).ToString();
         }
 
         private void textBox1_Click(object sender, EventArgs e)
@@ -221,8 +223,7 @@ namespace марафон2
                 {
                     con.Open();
                     SqlCommand cmd = con.CreateCommand();
-                    cmd.CommandText = "Insert into Registration Values ('" + rid + "','" +
-                        DateTime.Today + "','" + kit + "','4','" + cost + "','" + charity + "','" + textBox1.Text + "')";
+                    cmd.CommandText = "Insert into Registration Values ('" + rid + "','" + DateTime.Today + "','" + kit + "','4','" + cost + "','" + charity + "','" + textBox1.Text + "')";
                     cmd.ExecuteNonQuery();
                     con.Close();
                 }
