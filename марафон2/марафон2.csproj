@@ -82,6 +82,24 @@
     <Compile Include="completerunner.Designer.cs">
       <DependentUpon>completerunner.cs</DependentUpon>
     </Compile>
+    <Compile Include="map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="map.Designer.cs">
+      <DependentUpon>map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="long.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="long.Designer.cs">
+      <DependentUpon>long.cs</DependentUpon>
+    </Compile>
     <Compile Include="res.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +180,12 @@
     <EmbeddedResource Include="checkrunner.resx">
       <DependentUpon>checkrunner.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="long.resx">
+      <DependentUpon>long.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map.resx">
+      <DependentUpon>map.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="red.resx">
       <DependentUpon>red.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +222,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="res.resx">
       <DependentUpon>res.cs</DependentUpon>
     </EmbeddedResource>
