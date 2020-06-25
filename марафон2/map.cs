@@ -33,5 +33,193 @@ namespace марафон2
             i.Show();
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            check1.Text = "Checkpoint 3";
+            landmark.Text = "Landmark:";
+            landmarkN.Text = "Parque do Ibirapuera";
+            ldrinks.Visible = true;
+            lenergy.Visible = true;
+            drinks.Visible = true;
+            energy.Visible = true;
+            ltoilets.Visible = true;
+            toilets.Visible = true;
+            linformation.Visible = false;
+            lmedical.Visible = false;
+            information.Visible = false;
+            medical.Visible = false;
+            information.Image = марафон2.Properties.Resources.map_icon_information;
+            linformation.Text = "Information";
+
+        }
+
+        private void fullrace_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            check1.Text = "Race Start";
+            landmark.Text = "Samba full Marathon";
+            landmarkN.Visible = false;
+            services.Visible = false;
+            ldrinks.Visible = false;
+            lenergy.Visible = false;
+            ltoilets.Visible = false;
+            drinks.Visible = false;
+            energy.Visible = false;
+            toilets.Visible = false;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void halfrace_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            check1.Text = "Race Start";
+            landmark.Text = "Jonjo Half Marathon";
+            landmarkN.Visible = false;
+            services.Visible = false;
+            ldrinks.Visible = false;
+            lenergy.Visible = false;
+            ltoilets.Visible = false;
+            drinks.Visible = false;
+            energy.Visible = false;
+            toilets.Visible = false;
+        }
+
+        private void funrace_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            check1.Text = "Race Start";
+            landmark.Text = "Capoeira 5km Fun Run";
+            landmarkN.Visible = false;
+            services.Visible = false;
+            ldrinks.Visible = false;
+            lenergy.Visible = false;
+            ltoilets.Visible = false;
+            drinks.Visible = false;
+            energy.Visible = false;
+            toilets.Visible = false;
+        }
+
+        private void b1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            check1.Text = "Checkpoint 1";
+            landmark.Text = "Landmark:";
+            landmarkN.Text = "Avenida Rudge";
+            services.Text = "Servces Provided";
+            landmarkN.Visible = true;
+            services.Visible = true;
+            ldrinks.Visible = true;
+            lenergy.Visible = true;
+            linformation.Visible = false;
+            lmedical.Visible = false;
+            drinks.Visible = true;
+            energy.Visible = true;
+            information.Visible = false;
+            medical.Visible = false;
+            information.Image = марафон2.Properties.Resources.map_icon_information;
+            linformation.Text = "Information";
+        }
+
+        private void b2_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            check1.Text = "Checkpoint 2";
+            landmark.Text = "Landmark:";
+            landmarkN.Text = "Theatro Municipal";
+            landmarkN.Visible = true;
+            services.Visible = true;
+            ldrinks.Visible = true;
+            lenergy.Visible = true;
+            drinks.Visible = true;
+            energy.Visible = true;
+            ltoilets.Visible = true;
+            linformation.Visible = true;
+            lmedical.Visible = true;
+            toilets.Visible = true;
+            information.Visible = true;
+            medical.Visible = true;
+            information.Image = марафон2.Properties.Resources.map_icon_information;
+            linformation.Text = "Information";
+
+        }
+
+        private void b4_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            check1.Text = "Checkpoint 4";
+            landmark.Text = "Landmark:";
+            landmarkN.Text = "Theatro Municipal";
+            information.Image = марафон2.Properties.Resources.map_icon_medical;
+            linformation.Text = "Medical";
+            landmarkN.Visible = true;
+            services.Visible = true;
+            ldrinks.Visible = true;
+            lenergy.Visible = true;
+            drinks.Visible = true;
+            energy.Visible = true;
+            ltoilets.Visible = true;
+            linformation.Visible = true;
+            lmedical.Visible = false;
+            toilets.Visible = true;
+            information.Visible = true;
+            medical.Visible = false;
+
+        }
+
+        private void b5_Click(object sender, EventArgs e)
+        {
+            landmark.Text = "Landmark:";
+            landmarkN.Text = "Iguatemi";
+            landmarkN.Visible = true;
+            ldrinks.Visible = true;
+            lenergy.Visible = true;
+            drinks.Visible = true;
+            energy.Visible = true;
+            lenergy.Visible = true;
+            services.Visible = true;
+            ltoilets.Visible = true;
+            linformation.Visible = true;
+            lmedical.Visible = false;
+            information.Image = марафон2.Properties.Resources.map_icon_information;
+            linformation.Text = "Information";
+            toilets.Visible = true;
+            information.Visible = true;
+            medical.Visible = false;
+
+        }
+
+        private void b6_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            check1.Text = "Checkpoint 6";
+            landmark.Text = "Landmark:";
+            landmarkN.Text = "Rua Lisboa";
+            landmarkN.Visible = true;
+            services.Visible = true;
+            ldrinks.Visible = true;
+            lenergy.Visible = true;
+            drinks.Visible = true;
+            energy.Visible = true;
+            ltoilets.Visible = true;
+            linformation.Visible = false;
+            lmedical.Visible = false;
+            information.Image = марафон2.Properties.Resources.map_icon_information;
+            linformation.Text = "Information";
+            toilets.Visible = true;
+            information.Visible = false;
+            medical.Visible = false;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
     }
 }

@@ -33,5 +33,12 @@ namespace марафон2
             time.Text = time1.Days.ToString() + " дней " + time1.Hours.ToString() + " часов и " +
             time1.Minutes.ToString() + " минут до старта марафона!";
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            map m = new map();
+            m.Show();
+            this.Hide();
+        }
     }
 }
