@@ -40,5 +40,12 @@ namespace марафон2
             m.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CtrlR c = new CtrlR();
+            c.Show();
+            this.Close();
+        }
     }
 }

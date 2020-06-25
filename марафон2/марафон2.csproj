@@ -82,6 +82,18 @@
     <Compile Include="completerunner.Designer.cs">
       <DependentUpon>completerunner.cs</DependentUpon>
     </Compile>
+    <Compile Include="CtrlR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CtrlR.Designer.cs">
+      <DependentUpon>CtrlR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="email.Designer.cs">
+      <DependentUpon>email.cs</DependentUpon>
+    </Compile>
     <Compile Include="map.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +191,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="checkrunner.resx">
       <DependentUpon>checkrunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlR.resx">
+      <DependentUpon>CtrlR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="email.resx">
+      <DependentUpon>email.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="long.resx">
       <DependentUpon>long.cs</DependentUpon>

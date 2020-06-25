@@ -27,7 +27,7 @@ namespace марафон2
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan time1;
-            DateTime initial_time = Convert.ToDateTime("8.04.2020 6:00");
+            DateTime initial_time = Convert.ToDateTime("8.07.2020 6:00");
             DateTime current_time = DateTime.Now;
             time1 = initial_time - current_time;
             time.Text = time1.Days.ToString() + " дней " + time1.Hours.ToString() + " часов и " +
